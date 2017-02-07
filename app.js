@@ -15,6 +15,7 @@ function($scope){
 
   $scope.addPost=function () {
   	$scope.posts.push(
-  	{title:"Anew post", upvotes:4});
+  	{title:$scope.title, upvotes:4});
+ 	$scope.title='';
   };
 }]);
